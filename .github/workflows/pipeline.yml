@@ -2,7 +2,7 @@ name: Pipeline
 
 on:
   push:
-    branches: [ dev ] #dev env
+    branches: [ dev ] 
 env:
   APPLICATION_NAME: startupapp
 
