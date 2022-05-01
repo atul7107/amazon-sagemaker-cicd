@@ -62,7 +62,7 @@ hyperparameters_dictionary = boston_estimator.hyperparameters()
 
 
 report = pd.read_csv(f's3://{BUCKET_NAME}/{PREFIX}/reports.csv')
-while(len(report[report['commit_hash']==GITHUB_SHA]) == 0):
+#while(len(report[report['commit_hash']==GITHUB_SHA]) == 0):
     report = pd.read_csv(f's3://{BUCKET_NAME}/{PREFIX}/reports.csv')
 
 res = report[report['commit_hash']==GITHUB_SHA]
